@@ -210,7 +210,7 @@ export class CourseOverviewComponent implements OnInit, OnDestroy, AfterViewInit
             if (canRegister) {
                 this.redirectToCourseRegistrationPage();
             } else {
-                throw error;
+                throwError(() => error);
             }
         });
     }
